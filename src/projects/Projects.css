@@ -1,0 +1,174 @@
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 40px;
+    padding: 10px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+    position: relative; /* Make sure the parent container is positioned relative */
+    border-top: 5px solid transparent; /* Make the top border transparent */
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(90deg, rgb(43, 43, 47) 0%, rgb(41, 41, 50) 100%, rgb(42, 42, 42) 100%); /* Create a gradient border */
+    border-image-slice: 1; /* Ensure the gradient spans the entire border */
+    border-radius: 5px;
+}
+.project-container p{
+    color: white;
+    text-align: center;
+    margin-top: -60px;
+    font-size: 20px;
+    font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+   opacity: 0.5;
+}
+
+.project-container2{
+    display: flex;
+    flex-direction: row;
+}
+.project-container2:hover {
+    flex-direction: column;
+    gap: 100px;
+}
+
+.project-container h1{
+    top: -10px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    /* bottom: 10px; */
+    letter-spacing: 4px;
+    font-family: "Anta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font: 900; */
+    /* gap: 100px; */
+  }
+
+  .container .glass {
+    position: relative;
+    width: 280px;
+    height: 350px;
+    background: linear-gradient(#fff2, transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -75px;
+    backdrop-filter: blur(10px);
+    transform: rotate(calc(var(--r) * 1deg));
+    padding: 10px;
+    /* cursor: pointer; */
+  }
+  
+  .glass:hover {
+    box-shadow: 0px 0px 17px -3px white;
+  }
+  
+  .container:hover .glass {
+    transform: rotate(0deg);
+    margin: 0 30px;
+    /* margin-top: 100px; */
+    /* margin-bottom: 100px; */
+  }
+  
+  .container .glass::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "GRAD" 0;
+    padding: 20px;
+  }
+  
+  .container .glass svg {
+    font-size: 2.5em;
+    fill: #fff;
+  }
+  
+  .container .glass image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+
+  .svgimage {
+    opacity: 0.7;
+    cursor: pointer; /* Adjust the opacity value to your preference */
+  }
+ svg:hover .svgimage   {
+    opacity: 1;
+  }
+  
+
+@media only screen and (max-width: 768px){
+  .project-container h1{
+    top: -10px;
+    font-size: 35px;
+    /* bottom: 10px; */
+    letter-spacing: 4px;
+    font-family: "Anta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.project-container p{
+  margin-top: -55px;
+  font-size: 15px;
+}
+.container .glass {
+  width: 100px;
+  height: 150px;
+  padding: 10px;
+  margin: 0 -65px;
+  /* cursor: pointer; */
+}
+.container:hover .glass {
+  margin: 0 3px;
+}
+.glass:hover {
+  box-shadow: 0px 0px 8px -1px white;
+}
+.project-container2:hover {
+  flex-direction: column;
+  gap: 25px;
+}
+.container .glass::before {
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 5px;
+  text-align: center;
+}
+}

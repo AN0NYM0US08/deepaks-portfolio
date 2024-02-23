@@ -1,0 +1,147 @@
+.navbar ul{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 1000px;
+    height: fit-content;
+    list-style-type: none;
+    /* background-color: #222328; */
+    background: linear-gradient(#fff2, transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    padding: 5px;
+    border-radius: 30px;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+/* .navbar div{
+  border: 2px solid white;
+  height: 100px;
+  width: 100px;
+  background-image: url('/src/assets/image.jpeg');
+  object-fit: cover;
+} */
+.navbar ul li {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 100;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    font-weight: 400;
+}
+.navbar ul li:hover{
+  opacity: 1;
+  /* font-weight: 400; */
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* border: 3px solid white; */
+    padding: 5px;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #333;
+}
+
+.btn{
+  padding: 15px;
+  width: 150px;
+  border-radius: 20px;
+  color: white;
+  background: black;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: background 0.8s ease;
+
+}
+.btn:hover{
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
+.name{
+  color: white;
+  font-size: 30px;
+  height: fit-content;
+  width: fit-content;
+}
+.name h1{
+  /* background: #FFFFFF;
+  background: linear-gradient(to right, #FFFFFF 0%, #A7A1A1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  font-family: "Stick No Bills", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  background: #FFFFFF;
+background: linear-gradient(to right, #FFFFFF 0%, #555555 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------ */
+@media (max-width: 768px) {
+  .bar-small-screen {
+    display: block; /* Show Bar component */
+  }
+  .navbar ul{
+    display: none  ;
+  }
+  /* .navbar{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    gap: 100px;
+} */
+.btn{
+  display: none;
+}
+.navbar{
+  width: fit-content ;
+  margin-left: 50px;
+  gap: 150px;
+  padding: 5px;
+}
+.name{
+  color: white;
+  font-size: 25px;
+  height: fit-content;
+  width: fit-content;
+}
+}
+
+@media (min-width: 768px) {
+  .bar-small-screen {
+    display: none; /* Hide Bar component */
+  }
+}
+
+/* Media Queries for Responsiveness */
+
+/* @media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 576px) {
+
+}*/
+/* @media (max-width:1000px){
+
+}  */
